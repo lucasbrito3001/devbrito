@@ -28,6 +28,13 @@ footer {
         p {
             text-align: center;
         }
+
+        #mail-footer::before {
+            content: url('../../assets/mail-footer.svg');
+            width: 2rem;
+            height: 2rem;
+            background: white;
+        }
     }
 
     #footer-main {

@@ -3,9 +3,9 @@
       <main id="footer-main">
           <div class="footer-div" id="contact">
               <h3>Contatos</h3>
-              <p>devlucasmail@gmail.com</p>
-              <p>(18) 99735-1747</p>
-              <p>Birigui - Sao Paulo</p>
+              <span id="mail-footer">devlucasmail@gmail.com</span>
+              <p id="phone-footer">(18) 99735-1747</p>
+              <p id="address-footer">Birigui - Sao Paulo</p>
           </div>
 
           <div class="footer-div" id="my-resume">

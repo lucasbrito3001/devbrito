@@ -33,7 +33,6 @@
         @include breakpoint(mediumOnly) {
             flex-direction: column;
             width: 100%;
-            padding: 40px 0;
             overflow: hidden;
         };
 
@@ -45,7 +44,8 @@
             @include breakpoint(mediumOnly) {
                 flex-direction: column;
                 text-align: center;
-                height: calc(80vh - 40px);
+                height: 70vh;
+                justify-content: center;
             }
         }
         
@@ -56,7 +56,8 @@
             @include breakpoint(mediumOnly) {
                 width: 100%;
                 justify-content: space-evenly;
-                height: calc(10vh - 40px);
+                height: 20vh;
+                align-items: flex-start;
             }
         }
         
