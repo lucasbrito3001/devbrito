@@ -6,6 +6,11 @@ footer {
     align-items: center;
     max-width: 1100px;
     margin: auto;
+    padding: 0 10px;
+    
+    p {
+        text-align: center;
+    }
     
     .footer-div {
         position: relative;
@@ -24,17 +29,6 @@ footer {
         @include breakpoint(mediumOnly) {
             width: 90%;
         };
-
-        p {
-            text-align: center;
-        }
-
-        #mail-footer::before {
-            content: url('../../assets/mail-footer.svg');
-            width: 2rem;
-            height: 2rem;
-            background: white;
-        }
     }
 
     #footer-main {
@@ -48,5 +42,9 @@ footer {
             flex-direction: column;
             align-items: center;
         };
+    }
+    
+    #footer-aside {
+        padding: 5vh 0;
     }
 }

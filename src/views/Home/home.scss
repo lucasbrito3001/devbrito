@@ -38,3 +38,14 @@
     }
 }
 
+#list-stacks {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-stack {
+    width: 5rem;
+}
+
