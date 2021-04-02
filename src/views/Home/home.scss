@@ -1,0 +1,40 @@
+@import '../../assets/scss/index';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10vh 0 5vh;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    max-width: max(80vw , 1100px);
+    padding: 0 15px;
+    margin: -15vh 10px 5vh;
+    border-radius: 10px;
+    gap: 20px;
+    background-color: $dark2-palette;
+    box-shadow: .5px 1px 5px .5px $black-palette;
+
+    @include breakpoint(mediumOnly) {
+        border-radius: 2px;
+    }
+}
+
+.grid-item {
+    padding: 11vh 0;
+}
+
+.row-main{
+    background-image: linear-gradient(to bottom right,$black-palette,$cyan-palette,$purple-palette,$black-palette);
+    height: 70vh;
+    width: 100%;
+
+    @include breakpoint(smallOnly) {
+        padding-top: 15vh;
+    }
+}
+

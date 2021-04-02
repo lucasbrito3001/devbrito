@@ -1,0 +1,73 @@
+@import './colors';
+
+@mixin  primary-title {
+    h1 {
+        color: $white-palette;
+        font-size: 6rem;
+        font-weight: bold;
+        text-align: center;
+
+        @include breakpoint(mediumOnly) {
+            font-size: 5rem;
+        }
+
+        @include breakpoint(smallOnly) {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@mixin secondary-title {
+    h2 {
+        color: $white-palette;
+        font-size: 2.2rem;
+        font-weight: normal;
+        
+        @include breakpoint(mediumOnly) {
+            font-size: 1.7rem;
+        }
+
+        @include breakpoint(smallOnly) {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@mixin terciary-title {
+    h3 {
+        color: $white-palette;
+        font-size: 1.4rem;
+        font-weight: normal;
+
+        @include breakpoint(mediumOnly) {
+            font-size: 1.3rem;
+        }
+
+        @include breakpoint(smallOnly) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@mixin paragraphs {
+    p {
+        color: $white-palette;
+        font-size: 1rem;
+        font-weight: lighter;
+        text-align: justify;
+
+        @include breakpoint(mediumOnly) {
+            font-size: .95rem;
+        }
+
+        @include breakpoint(smallOnly) {
+            font-size: .92rem;
+        }
+    }
+}
+
+@mixin sections {
+    section {
+        padding-top: 11vh;
+    }
+}

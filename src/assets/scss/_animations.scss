@@ -1,0 +1,84 @@
+@mixin colorBrandPurpleToCyan{
+    animation: changePurpleCyan 6s infinite;
+}
+
+@mixin colorBrandCyanToPurple {
+    animation: changeCyanPurple 6s infinite;
+}
+
+@mixin borderColorPurpleToCyan($border) {
+
+    @if $border == borderFull {
+        animation: borderFull 5s infinite;
+        @keyframes borderFull {
+            0%{
+                border: 1px solid $purple-palette;
+            } 90% {
+                border: 1px solid $cyan-palette;
+            } 100% {
+                border: 1px solid $purple-palette;
+            }
+        }
+    }
+
+    @else if $border == borderBottom {
+        animation: borderBottom 5s infinite;
+        @keyframes borderBottom {
+            0%{
+                border-bottom: 1px solid $purple-palette;
+            } 90% {
+                border-bottom: 1px solid $cyan-palette;
+            } 100% {
+                border-bottom: 1px solid $purple-palette;
+            }
+        }
+    }
+
+    @else if $border == borderLeft {
+        animation: borderLeft 5s infinite;
+        @keyframes borderLeft {
+            0%{
+                border-left: 1px solid $purple-palette;
+            } 90% {
+                border-left: 1px solid $cyan-palette;
+            } 100% {
+                border-left: 1px solid $purple-palette;
+            }
+        }
+    }
+
+    @else if $border == borderRight {
+        animation: borderRight 5s infinite;
+        @keyframes borderRight {
+            0%{
+                border-right: 1px solid $purple-palette;
+            } 90% {
+                border-right: 1px solid $cyan-palette;
+            } 100% {
+                border-right: 1px solid $purple-palette;
+            }
+        }
+    }
+
+    
+}
+
+@keyframes changePurpleCyan {
+    0%{
+        color: $purple-palette;
+    } 50% {
+        color: $cyan-palette;
+    } 100% {
+        color: $purple-palette;
+    }
+}
+
+@keyframes changeCyanPurple {
+    0%{
+        color: $cyan-palette;
+    } 50% {
+        color: $purple-palette;
+    } 100% {
+        color: $cyan-palette;
+    }
+}
