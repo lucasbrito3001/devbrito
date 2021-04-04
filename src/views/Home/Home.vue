@@ -12,8 +12,8 @@
         <img :src="require('../../assets/lucas-colorful.jpeg')" id="img-resume" alt="resume-img">
 
         <div id="main-text-resume">
-          <h3>
-            Olá, tudo bem? Se você está aqui deve ser porque quer saber um pouco mais sobre mim e minha carreira, então, fica aqui um breve resumo:
+          <h3 id="title-main-text">
+            Olá, tudo bem? Se você está aqui deve ser porque quer saber mais sobre mim e minha carreira, então, fica aqui um breve resumo:
           </h3>
           <p>Sou um jovem Desenvolvedor Front-end, focado no framework Vue.js. Busco sempre aperfeiçoar e aprender novas tecnologias que possam agregar valor pra mim e pra minha carreira. Possuo formação técnica em Administração de Empresas onde adquiri experiência nas áreas de Gerenciamento de Pessoas, Técnicas de Marketing, e Análises Financeiras. Cursei 2 anos de Engenharia de Controle e Automação na Universidade Tecnológica Federal do Paraná (UTFPR-CP) e optei pelo trancamento da matrícula para iniciar outro curso, no momento estou avaliando as possibilidades, mas é provável que eu curse Tecnologia em Sistemas para Internet</p>
         </div>
