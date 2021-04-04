@@ -1,7 +1,7 @@
 <template>
   <nav id="navbar">
     <div class="menu-collapse">
-        <router-link to="/" id="brand-button"><span class="text-brand" id="color-brand-dev">Dev</span><span class="text-brand" id="color-brand-lucas">Lucas</span></router-link>
+        <router-link to="/" id="brand-button"><span class="text-brand" id="color-brand-dev">Dev</span><span class="text-brand" id="color-brand-lucas">Brito</span></router-link>
         <button type="button" class="toggler-button" v-show="togglerHidden" @click="navbarAlternate">
                 <img id="svg-img" :src="menuTogglerIcon" alt="toggle-menu-button">
         </button>

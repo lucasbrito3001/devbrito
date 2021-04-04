@@ -10,7 +10,7 @@
 
           <div class="footer-div" id="my-resume">
               <h3>Sobre Mim</h3>
-              <p>Estudante de Desenvolvimento Front-end, focado no framework Vue.js. Busco sempre aperfeiçoar e aprender novas tecnologias que possam agregar valor pra mim e pra minha carreira. Possuo formação técnica em Administração de Empresas onde adquiri experiência nas áreas de Gerenciamento de Pessoas, Técnicas de Marketing, e Análises Financeiras. Atualmente curso Engenharia de Controle e Automação na Universidade Tecnológica Federal do Paraná (UTFPR-CP)</p>
+              <p>Estudante de Desenvolvimento Front-end, focado no framework Vue.js. Busco sempre aperfeiçoar e aprender novas tecnologias que possam agregar valor pra mim e pra minha carreira. Possuo formação técnica em Administração de Empresas onde adquiri experiência nas áreas de Gerenciamento de Pessoas, Técnicas de Marketing, e Análises Financeiras. Atualmente curso Engenharia de Controle e Automação na Universidade Tecnológica Federal do Paraná (UTFPR-CP).</p>
           </div>
           <div class="footer-div" id="social-networks">
               <h3>Redes Sociais</h3>

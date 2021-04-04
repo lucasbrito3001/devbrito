@@ -1,4 +1,5 @@
 @import './colors';
+@import './animations';
 
 @mixin  primary-title {
     h1 {
@@ -21,7 +22,11 @@
     h2 {
         color: $white-palette;
         font-size: 2.2rem;
+        width: 100%;
         font-weight: normal;
+        padding: 5px 2px;
+        text-align: left;
+        border-bottom: 3px solid rgb(41, 41, 41);
         
         @include breakpoint(mediumOnly) {
             font-size: 1.7rem;
@@ -38,6 +43,7 @@
         color: $white-palette;
         font-size: 1.4rem;
         font-weight: normal;
+        margin-bottom: 5vh;
 
         @include breakpoint(mediumOnly) {
             font-size: 1.3rem;
@@ -52,16 +58,17 @@
 @mixin paragraphs {
     p {
         color: $white-palette;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: lighter;
         text-align: justify;
+        line-height: 1.75;
 
         @include breakpoint(mediumOnly) {
-            font-size: .95rem;
+            font-size: .98rem;
         }
 
         @include breakpoint(smallOnly) {
-            font-size: .92rem;
+            font-size: .95rem;
         }
     }
 }
