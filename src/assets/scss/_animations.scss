@@ -1,10 +1,12 @@
+@import './colors';
+
 @mixin colorBrandPurpleToCyan{
     animation: changePurpleCyan 6s infinite;
-}
+};
 
 @mixin colorBrandCyanToPurple {
     animation: changeCyanPurple 6s infinite;
-}
+};
 
 @mixin borderColorPurpleToCyan($border) {
 
@@ -61,7 +63,32 @@
     }
 
     
-}
+};
+
+
+@mixin showContent($side) {
+    @if $side == leftSide {
+        animation: showContentLeft 1s;
+        @keyframes showContentLeft {
+            from {
+                transform: translateX(-150px);
+            } to {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    @else if $side == rightSide {
+        animation: showContentRight 1s;
+        @keyframes showContentRight {
+            from {
+                transform: translateX(150px);
+            } to {
+                transform: translateX(0);
+            }
+        }
+    }
+};
 
 @keyframes changePurpleCyan {
     0%{
@@ -71,7 +98,7 @@
     } 100% {
         color: $purple-palette;
     }
-}
+};
 
 @keyframes changeCyanPurple {
     0%{
@@ -81,4 +108,4 @@
     } 100% {
         color: $cyan-palette;
     }
-}
+};
