@@ -1,0 +1,39 @@
+@import '../../assets/scss/index.scss';
+
+.render-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .list-item {
+        color: $white-palette;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        text-align: center;
+        width: 20vw;
+        margin: 2vh auto;
+        padding: 5px 0;
+        border-radius: 5px;
+
+        @include breakpoint(mediumOnly) {
+            width: 45vw;
+        }
+
+        @include breakpoint(smallOnly) {
+            width: 70vw;
+        }
+    }
+
+    .list-item:hover {
+        border: 1px solid $cyan-palette;
+    }
+
+    .list-item:nth-child(2n+1) {
+        @include floatingElement(2s, 0s);
+    }
+
+    .list-item:nth-child(2n) {
+        @include floatingElement(2s, 1s);
+    }
+}

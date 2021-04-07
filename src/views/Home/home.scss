@@ -6,9 +6,20 @@
     align-items: center;
     width: 100%;
     margin: 10vh 0 5vh;
+
+    .row-main{
+        background-image: linear-gradient(to bottom right,$black-palette,$cyan-palette,$purple-palette,$black-palette);
+        height: 70vh;
+        width: 100%;
+    
+        @include breakpoint(smallOnly) {
+            height: 50vh;
+            padding-top: 15vh;
+        }
+    }
 }
 
-.grid {
+.flex-content {
     display: flex;
     flex-direction: column;
     max-width: max(90vw , 1100px);
@@ -23,14 +34,18 @@
         border-radius: 2px;
     }
 
+    .grid-item {
+        padding: 11vh 0;
+    }
+
     #resume-home {
         display: grid;
-        gap: 40px;
+        gap: 0 40px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 'tR tR tR' 'iR mtR mtR';
+        grid-template-areas: 'tR tR tR' 'iR mtR mtR' 'aR aR aR';
 
         @include breakpoint(smallOnly) {
-            grid-template-areas: 'tR tR tR' 'iR iR iR' 'mtR mtR mtR' ;
+            grid-template-areas: 'tR tR tR' 'iR iR iR' 'mtR mtR mtR' 'aR aR aR';
         }
 
         #title-resume {
@@ -49,44 +64,63 @@
             @include breakpoint(smallOnly) {
                 width: 150px;
                 border-radius: 3px;
+                margin-bottom: 5vh;
             }
         }
         
         #main-text-resume {
             grid-area: mtR;
-            width: 85%;
+            width: 95%;
             margin: auto;
 
             @include showContent(rightSide);
         }
+
+        #title-main-text {
+            text-align: justify;
+        }
+
+        #academic-resume {
+            display: flex;
+            flex-direction: row;
+            grid-area: aR;
+            list-style: none;
+            color: $white-palette;
+            width: 95%;
+            margin: 10vh auto 0;
+            justify-content: space-around;
+            background-image: url('../../assets/academic-resume-bg-lg.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 5vh 0;
+            border-radius: 5px;
+
+            @include breakpoint(smallOnly) {
+                flex-direction: column;
+                width: 100%;
+                background-image: url('../../assets/academic-resume-bg-sm.jpg');
+                background-position: center;
+                background-size: cover;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            li {
+                width: 50%;
+                margin: 0 4vh;
+                background-color: rgba(0,0,0,.9);
+                padding: 2vh;
+                border-radius: 5px;
+
+                @include breakpoint(smallOnly) {
+                    width: 95%;
+                    margin: 2vh auto;
+                }
+            }
+        }
     }
-}
-
-.grid-item {
-    padding: 11vh 0;
-}
-
-.row-main{
-    background-image: linear-gradient(to bottom right,$black-palette,$cyan-palette,$purple-palette,$black-palette);
-    height: 70vh;
-    width: 100%;
-
-    @include breakpoint(smallOnly) {
-        height: 50vh;
-        padding-top: 15vh;
-    }
-}
-
-#list-stacks {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    @include showContent(leftSide)
-}
-
-.img-stack {
-    width: 5rem;
 }
 
