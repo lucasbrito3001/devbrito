@@ -28,7 +28,7 @@ export default {
       navbarButtons: [
         {button: 'Home', reference: '/'},
         {button: 'Resumo', reference: '/#resume-home'},
-        {button: 'Tecnologias', reference: '/#technologies-home'},
+        {button: 'Tecnologias', reference: '/#tech-home'},
         {button: 'Projetos Realizados', reference: '/#projects-home'},
         {button: 'Contato', reference: '/contact'}
       ],

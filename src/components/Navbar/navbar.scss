@@ -183,9 +183,9 @@
 // Configuração animação da cor do brand
 
 #color-brand-dev {
-    @include colorBrandPurpleToCyan
+    @include colorTextPurpleToCyan
 }
 
 #color-brand-lucas {
-    @include colorBrandCyanToPurple
+    @include colorTextCyanToPurple
 }

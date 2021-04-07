@@ -1,0 +1,36 @@
+@import '../../assets/scss/index';
+
+#list-stacks {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10vh 0;
+
+    @include showContent(leftSide);
+
+    .figure-stacks {
+
+        @include breakpoint(smallOnly) {
+            margin: 2vh 0;
+        }
+
+        .img-stack {
+            width: 5rem;
+            margin-bottom: 5px;
+    
+            @include floatingElement(3s , 0s);
+        }
+
+        figcaption {
+            font-size: .9rem;
+            text-align: center;
+            color: $white-palette;
+            margin-top: 2vh;
+        }
+        
+    }
+}
+
+
+

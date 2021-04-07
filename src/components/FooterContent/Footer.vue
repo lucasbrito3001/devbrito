@@ -3,9 +3,13 @@
       <main id="footer-main">
           <div class="footer-div" id="contact">
               <h3>Contatos</h3>
-              <p id="mail-footer">devlucasmail@gmail.com</p>
-              <p id="phone-footer">(18) 99735-1747</p>
-              <p id="address-footer">Birigui - Sao Paulo</p>
+              <address>
+                  <p id="mail-footer">devlucasmail@gmail.com</p>
+                  <p id="phone-footer">(18) 99735-1747</p>
+                  <p id="address-footer">Birigui - Sao Paulo</p>
+              </address>
+
+              <a href="mailto:devlucasmail@gmail.com?subject=Mensagem%20de%20Contato%20de%20[Seu Nome]" id="send-mail">Enviar e-mail</a>
           </div>
 
           <div class="footer-div" id="my-resume">
@@ -27,7 +31,13 @@
 
 <script>
 export default {
+    name: 'Footer',
 
+    data() {
+        return {
+            nameContact: ''
+        }
+    }
 }
 </script>
 
