@@ -105,3 +105,21 @@
     }
 }
 
+aside {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.translateToTop-enter, .translateToTop-leave-to {
+    transform: translateY(200px);
+}
+
+.translateToTop-enter-to, .translateToTop-leave {
+    transform: translateY(0px);
+}
+
+.translateToTop-enter-active, .translateToTop-leave-active {
+    transition: all 1s;
+}
+

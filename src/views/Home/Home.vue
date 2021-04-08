@@ -1,69 +1,63 @@
 <template>
-  <main class="container">
-    <section class="row-main">
-      <h1>Front-end</h1>
-      <h1>Developer</h1>
-    </section>
-    <section class="flex-content">
-       <article class="grid-item" id="resume-home">
-
-        <div id="div-img-resume">
-          <img :src="require('../../assets/lucas-colorful.jpeg')" id="img-resume" alt="resume-img">
-        </div>
-
-        <div id="main-text-resume">
-          <h2 id="title-resume">Sobre mim</h2>
-
-          <h3 id="title-main-text">
-            Olá, tudo bem? Se você está aqui deve ser porque quer saber mais sobre mim, então, fica aqui um breve resumo:
-          </h3>
-
-          <p>Meu nome é Lucas de Brito, e eu iniciei os meus estudos em Desenvolvimento Front-end em 2020, que foi o ano em que eu decidi mudar a minha vida :). Sou um ex-graduando de Engenharia de Controle e Automação, que se encontrou no mundo do desenvolvimento web.</p>
-
-          <p>Atualmente não estou matriculado em nenhuma universidade, e todo meu conhecimento em front-end foi adquirido por meio de cursos online, e de muito estudo e pesquisa pela internet. Como a maioria ja duvidei algumas vezes se conseguiria ser um bom desenvolvedor um dia, mas hoje, vejo que todo meu esforço não foi em vão, pois consigo notar meu desenvolvimento, e enxergo que se dedicar a uma coisa que você gosta de verdade realmente vale a pena.</p>
-
-          <a href="https://linkedin.com/in/webdevbrito" target="blank"><button id="resume-linkedin-button">Meu LinkedIn</button></a>
-        </div>
-
-      </article>
-      <article class="grid-item" id="tech-home">
-        <h2 id="title-tech">Minha Stack 💻📚</h2>
-        <h3 class="skills">Hard Skills</h3>
-        <p>Apesar de ainda ter muito a aprender, minha atual principal stack é a front-end, e as tecnologias principais que mais trabalhei/estou aprendendo a trabalhar hoje são as seguintes:</p>
-
-        <ShowImages  :props-techs-to-show = "propsShowImagesComponent"/>
-
-        <p>Porém isso não significa que estas são minhas únicas opções de trabalho, apenas que foi a minha aposta inicial, e estou completamente disposto a aprender novas tecnologias e me adaptar conforme o projeto precise. Por exemplo, tenho projeções a curto prazo de usar React.js e Angular, portanto trabalhar com ambos seriam experiências desejáveis, e como já tenho uma base de componentização com Vue.js, acredito que me adaptar será tranquilo.</p>
-
-        <h3 class="skills">Soft Skills</h3>
-
-        <RenderList :props-list-to-render = "propsRenderSoftSkillsList"/>
-
-        <a href="https://github.com/lucasbrito3001" target="blank"><button id="stacks-github-button">Meu Github</button></a>
-
-      </article>
-       <article class="grid-item" id="projects-home">
-         <h2>Portfólio</h2>
-
-        <RenderPortfolio :props-list-portfolio-to-render="propsListPortfolioToRender"/>
-
-       </article>
-       
-    </section>
-  </main>
+  <div class="home">
+    <main class="container">
+      <section class="row-main">
+        <h1>Front-end</h1>
+        <h1>Developer</h1>
+      </section>
+      <section class="flex-content">
+         <article class="grid-item" id="resume-home">
+          <div id="div-img-resume">
+            <img :src="require('../../assets/lucas-colorful.jpeg')" id="img-resume" alt="resume-img">
+          </div>
+          <div id="main-text-resume">
+            <h2 id="title-resume">Sobre mim</h2>
+            <h3 id="title-main-text">
+              Olá, tudo bem? Se você está aqui deve ser porque quer saber mais sobre mim, então, fica aqui um breve resumo:
+            </h3>
+            <p>Meu nome é Lucas de Brito, e eu iniciei os meus estudos em Desenvolvimento Front-end em 2020, que foi o ano em que eu decidi mudar a minha vida :). Sou um ex-graduando de Engenharia de Controle e Automação, que se encontrou no mundo do desenvolvimento web.</p>
+            <p>Atualmente não estou matriculado em nenhuma universidade, e todo meu conhecimento em front-end foi adquirido por meio de cursos online, e de muito estudo e pesquisa pela internet. Como a maioria ja duvidei algumas vezes se conseguiria ser um bom desenvolvedor um dia, mas hoje, vejo que todo meu esforço não foi em vão, pois consigo notar meu desenvolvimento, e enxergo que se dedicar a uma coisa que você gosta de verdade realmente vale a pena.</p>
+            <a href="https://linkedin.com/in/webdevbrito" target="blank"><button id="resume-linkedin-button">Meu LinkedIn</button></a>
+          </div>
+        </article>
+        <article class="grid-item" id="tech-home">
+          <h2 id="title-tech">Minha Stack 💻📚</h2>
+          <h3 class="skills">Hard Skills</h3>
+          <p>Apesar de ainda ter muito a aprender, minha atual principal stack é a front-end, e as tecnologias principais que mais trabalhei/estou aprendendo a trabalhar hoje são as seguintes:</p>
+          <ShowImages  :props-techs-to-show = "propsShowImagesComponent"/>
+          <p>Porém isso não significa que estas são minhas únicas opções de trabalho, apenas que foi a minha aposta inicial, e estou completamente disposto a aprender novas tecnologias e me adaptar conforme o projeto precise. Por exemplo, tenho projeções a curto prazo de usar React.js e Angular, portanto trabalhar com ambos seriam experiências desejáveis, e como já tenho uma base de componentização com Vue.js, acredito que me adaptar será tranquilo.</p>
+          <h3 class="skills">Soft Skills</h3>
+          <RenderList :props-list-to-render = "propsRenderSoftSkillsList"/>
+          <a href="https://github.com/lucasbrito3001" target="blank"><button id="stacks-github-button">Meu Github</button></a>
+        </article>
+         <article class="grid-item" id="projects-home">
+           <h2>Portfólio</h2>
+          <RenderPortfolio :props-list-portfolio-to-render="propsListPortfolioToRender"/>
+         </article>
+    
+      </section>
+    </main>
+    <transition name="translateToTop">
+      <aside v-show="showWhatsAppButton">
+        <WhatsApp/>
+      </aside>
+    </transition>
+  </div>
 </template>
 
 <script>
 import ShowImages from '../../components/ShowVariableImages/ShowImages'
 import RenderList from '../../components/RenderLists/RenderList'
 import RenderPortfolio from '../../components/RenderPortfolio/RenderPortfolio'
+import WhatsApp from '../../components/WhatsAppButton/WhatsApp'
 export default {
   name: 'HomePage',
 
   components: {
     ShowImages,
     RenderList,
-    RenderPortfolio
+    RenderPortfolio,
+    WhatsApp
   },
 
   data() {
@@ -120,8 +114,17 @@ export default {
           usedTechs: [{tech: 'Vue.js', key: 'vue'} , {tech: 'JavaScript', key: 'js'} , {tech: 'HTML e CSS' , key: 'html-css'} , {tech: 'SASS' , key: 'sass'}]
 
         }
-      ]
+      ],
+
+      showWhatsAppButton: false
     }
+  },
+
+  created() {
+    window.addEventListener('scroll', () => {
+      const scrollPage = window.scrollY
+      scrollPage >= 600 ? this.showWhatsAppButton = true : this.showWhatsAppButton = false
+    })
   }
 }
 </script>

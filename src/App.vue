@@ -30,7 +30,7 @@ export default {
         {button: 'Resumo', reference: '/#resume-home'},
         {button: 'Tecnologias', reference: '/#tech-home'},
         {button: 'Projetos Realizados', reference: '/#projects-home'},
-        {button: 'Contato', reference: '/contact'}
+        {button: 'Contato', reference: '/#contact'}
       ],
 
       socialNetworkButtons: [
