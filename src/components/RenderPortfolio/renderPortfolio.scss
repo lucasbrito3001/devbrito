@@ -1,0 +1,51 @@
+@import '../../assets/scss/index.scss';
+
+#render-item-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+
+    .portfolio-item {
+        flex: 1 1 350px;
+        margin: 2vh;
+        background-color: $shadows-palette;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 6px 6px 5px 2px rgb(7, 7, 7) , -6px -6px 4px 2px rgb(22, 22, 22);
+
+        @include breakpoint(mediumOnly) {
+            flex: 1 1 300px;
+        }
+
+        @include breakpoint(smallOnly) {
+            margin: 2vh .5vh;
+        }
+
+        .portfolio-button-github {
+            @include buttonDefault;
+        }
+
+        #used-techs {
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            list-style: none;
+
+            .used-tech-project {
+                flex: 1 1 auto;
+                margin: 1vh;
+                border-radius: 3px;
+                padding: 10px;
+                background-color: $purple-palette;
+
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+
+        .link-repo-github {
+            text-decoration: none;
+        }
+    }
+}

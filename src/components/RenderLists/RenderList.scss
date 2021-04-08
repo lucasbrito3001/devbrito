@@ -5,35 +5,32 @@
     justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
+    box-shadow: -6px -6px 10px 6px rgb(10, 10, 10) , 6px 6px 10px 6px rgb(10, 10, 10);
+    border-radius: 10px;
+    border: 1px solid rgb(10, 10, 10);
+    padding: 15px 0;
 
     .list-item {
         color: $white-palette;
         font-size: 1.1rem;
         font-weight: bolder;
         text-align: center;
-        width: 20vw;
+        width: 30%;
         margin: 2vh auto;
-        padding: 5px 0;
+        padding: 10px 0;
         border-radius: 5px;
+        box-shadow: -6px -6px 10px 1px rgb(20, 20, 20), 6px 6px 10px 1px rgb(10, 10, 10);
 
         @include breakpoint(mediumOnly) {
-            width: 45vw;
-        }
-
-        @include breakpoint(smallOnly) {
-            width: 70vw;
+            width: 45%;
         }
     }
 
-    .list-item:hover {
-        border: 1px solid $cyan-palette;
-    }
+    // .list-item:nth-child(2n+1) {
+    //     @include floatingElement(2s, 0s);
+    // }
 
-    .list-item:nth-child(2n+1) {
-        @include floatingElement(2s, 0s);
-    }
-
-    .list-item:nth-child(2n) {
-        @include floatingElement(2s, 1s);
-    }
+    // .list-item:nth-child(2n) {
+    //     @include floatingElement(2s, 1s);
+    // }
 }

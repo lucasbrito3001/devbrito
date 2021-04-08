@@ -19,8 +19,23 @@ footer {
         text-align: center;
 
         @include breakpoint(mediumOnly) {
+            width: 70%;
+        };
+
+        @include breakpoint(smallOnly) {
             width: 90%;
         };
+
+        a {
+            padding: 5px;
+            color: $white-palette;
+            display: block;
+            margin: 2vh auto;
+            width: fit-content;
+            border-radius: 5px;
+
+            @include borderColorPurpleToCyan(borderFull);
+        }
     }
 
     #footer-main {
@@ -34,17 +49,6 @@ footer {
             flex-direction: column;
             align-items: center;
         };
-
-        #send-mail {
-            display: block;
-            color: $white-palette;
-            text-decoration: none;
-            background-color: rgb(2, 2, 49);
-            border-radius: 3px;
-            padding: 5px;
-            margin: 10px auto;
-            width: fit-content;
-        }
     }
     
     #footer-aside {

@@ -30,7 +30,7 @@ export default {
         {button: 'Resumo', reference: '/#resume-home'},
         {button: 'Tecnologias', reference: '/#tech-home'},
         {button: 'Projetos Realizados', reference: '/#projects-home'},
-        {button: 'Contato', reference: '/contact'}
+        {button: 'Contato', reference: '/#contact'}
       ],
 
       socialNetworkButtons: [
@@ -77,7 +77,8 @@ export default {
 
   @include primary-title;
   @include secondary-title;
-  @include terciary-title;
+  @include tertiary-title;
+  @include quaternary-title;
   @include paragraphs;
   @include sections;
 
@@ -105,6 +106,10 @@ export default {
     top: 0px;
     height: fit-content;
     width: 100%;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   #footer {

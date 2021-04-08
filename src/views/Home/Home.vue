@@ -1,81 +1,74 @@
 <template>
-  <main class="container">
-    <section class="row-main">
-      <h1>Front-end</h1>
-      <h1>Developer</h1>
-    </section>
-    <section class="flex-content">
-       <article class="grid-item" id="resume-home">
-
-        <h2 id="title-resume">Resumo</h2>
-
-        <img :src="require('../../assets/lucas-colorful.jpeg')" id="img-resume" alt="resume-img">
-
-        <div id="main-text-resume">
-          <h3 id="title-main-text">
-            Olá, tudo bem? Se você está aqui deve ser porque quer saber mais sobre mim e minha carreira, então, fica aqui um breve resumo:
-          </h3>
-          <p>Sou um jovem Desenvolvedor Front-end, que tem muita vontade de aprender. Apesar de atualmente utilizar o framework Vue.js na maioria dos meus projetos eu busco sempre aperfeiçoar e aprender novas tecnologias que possam agregar valor pra mim e pra minha carreira, como por exemplo React.js. Possuo formação técnica em Administração de Empresas, cursei 2 anos de Engenharia de Controle e Automação na Universidade Tecnológica Federal do Paraná (UTFPR-CP) e no momento estou avaliando as possibilidades, mas é provável que eu curse Tecnologia em Sistemas para Internet</p>
-        </div>
-
-        <ul id="academic-resume">
-          <li>
-            <h3>ETEC - Ensino Médio e Técnico em ADM Integrado</h3>
-            <p><strong>Período: </strong> Início 2015 - Conclusão 2017</p>
-            <p><strong>Instituição: </strong> ETEC Dr. Renato Cordeiro</p>
-            <p><strong>Breve explicação: </strong> Cursei a modalidade ETIM (Ensino Técnico Integrado ao Médio) na ETEC de Birigui, onde cursei Administração de Empresas.  <br> Nesse curso aprendi algumas técnicas de Marketing, Gestão Financeira, Recursos Humanos, Logística, Informática e Empreendedorismo, que me ajudaram muito a ter uma visão mais analítica, e entender melhor como funciona uma empresa e suas necessidades. E além disso, também obtive uma boa experiência com gerenciamento de tempo, que para o meu dia a dia é muito útil.</p>
-          </li>
-          <li>
-            <h3>UTFPR - Engenharia de Controle e Automação</h3>
-            <p><strong>Período: </strong> Início 2018/2 - Trancamento 2021/1</p>
-            <p><strong>Instituição: </strong> UTFPR - Câmpus Cornélio Procópio</p>
-            <p><strong>Breve explicação: </strong>Apesar de estar gostando do curso, e estar mandando bem nas matérias e atividades extracurriculares eu decidi que irei realizar o trancamento da minha matrícula, pois senti que todo o esforço gigantesco que estava fazendo, poderia ser redirecionado para ser melhor utilizado com alguma coisa que eu me sentisse mais confortável e feliz fazendo, que no caso era a programação. <br> E em meio a esse mundo da programação eu encontrei por causa de um amigo, o <span style="color: cyan">Desenvolvimento Front-end</span>, e foi onde eu me apeguei e peguei paixão, e estou até hoje aqui aprendendo cada dia mais, e a cada dia que passa eu fico mais maravilhado com as possibilidades e oportunidades dessa área.</p>
-          </li>
-        </ul>
-      </article>
-      <article class="grid-item" id="tech-home">
-        <h2 id="title-tech">Minha Stack</h2>
-        <h3>Hard Skills</h3>
-        <p>Apesar de ainda ter muito a aprender, minha atual principal stack é a front-end, e as tecnologias principais que mais trabalhei/estou aprendendo a trabalhar hoje e pretendo me aprofundar (principalmente no uso do Sass) são as seguintes:</p>
-
-        <ShowImages  :props-techs-to-show = "propsShowImagesComponent"/>
-
-        <p>Porém isso não significa que estas são minhas únicas opções de trabalho, apenas que foi a minha aposta inicial, e estou completamente disposto a aprender novas tecnologias e me adaptar conforme o projeto precise. Por exemplo, tenho projeções a curto prazo de usar React.js e Angular, portanto trabalhar com ambos seriam experiências desejáveis além de realizar apenas tutoriais, e como já tenho uma base de componentização com Vue.js, acredito que me adaptar será tranquilo.</p>
-
-        <h3>Soft Skills</h3>
-
-        <RenderList :props-list-to-render = "propsRenderSoftSkillsList"/>
-
-      </article>
-       <article class="grid-item" id="projects-home">
-         <h2>Portfólio</h2>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam maxime voluptates eaque, pariatur ducimus fuga, repudiandae facilis molestiae repellat voluptate sit inventore non eos atque placeat enim magni iure corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eum accusantium corporis, voluptatibus quo deserunt nemo, est nulla dolor sint sequi omnis. Voluptatibus totam rem excepturi voluptas fuga quis culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ea fugiat, excepturi reprehenderit atque rerum doloribus tempore, consequatur a, in dolorum quidem. Est, animi nulla eaque iste iusto libero odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste exercitationem eos dignissimos possimus, modi alias vitae ea porro laborum odit doloremque aliquam, accusantium quos magni consequuntur deserunt ad vero. Perferendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, vero? Deserunt qui perferendis delectus minus odit corporis ipsam quidem. Error ipsum assumenda veritatis quia recusandae alias. Beatae dicta nostrum eaque.</p>
-       </article>
-       
-    </section>
-  </main>
+  <div class="home">
+    <main class="container">
+      <section class="row-main">
+        <h1>Front-end</h1>
+        <h1>Developer</h1>
+      </section>
+      <section class="flex-content">
+         <article class="grid-item" id="resume-home">
+          <div id="div-img-resume">
+            <img :src="require('../../assets/lucas-colorful.jpeg')" id="img-resume" alt="resume-img">
+          </div>
+          <div id="main-text-resume">
+            <h2 id="title-resume">Sobre mim</h2>
+            <h3 id="title-main-text">
+              Olá, tudo bem? Se você está aqui deve ser porque quer saber mais sobre mim, então, fica aqui um breve resumo:
+            </h3>
+            <p>Meu nome é Lucas de Brito, e eu iniciei os meus estudos em Desenvolvimento Front-end em 2020, que foi o ano em que eu decidi mudar a minha vida :). Sou um ex-graduando de Engenharia de Controle e Automação, que se encontrou no mundo do desenvolvimento web.</p>
+            <p>Atualmente não estou matriculado em nenhuma universidade, e todo meu conhecimento em front-end foi adquirido por meio de cursos online, e de muito estudo e pesquisa pela internet. Como a maioria ja duvidei algumas vezes se conseguiria ser um bom desenvolvedor um dia, mas hoje, vejo que todo meu esforço não foi em vão, pois consigo notar meu desenvolvimento, e enxergo que se dedicar a uma coisa que você gosta de verdade realmente vale a pena.</p>
+            <a href="https://linkedin.com/in/webdevbrito" target="blank"><button id="resume-linkedin-button">Meu LinkedIn</button></a>
+          </div>
+        </article>
+        <article class="grid-item" id="tech-home">
+          <h2 id="title-tech">Minha Stack 💻📚</h2>
+          <h3 class="skills">Hard Skills</h3>
+          <p>Apesar de ainda ter muito a aprender, minha atual principal stack é a front-end, e as tecnologias principais que mais trabalhei/estou aprendendo a trabalhar hoje são as seguintes:</p>
+          <ShowImages  :props-techs-to-show = "propsShowImagesComponent"/>
+          <p>Porém isso não significa que estas são minhas únicas opções de trabalho, apenas que foi a minha aposta inicial, e estou completamente disposto a aprender novas tecnologias e me adaptar conforme o projeto precise. Por exemplo, tenho projeções a curto prazo de usar React.js e Angular, portanto trabalhar com ambos seriam experiências desejáveis, e como já tenho uma base de componentização com Vue.js, acredito que me adaptar será tranquilo.</p>
+          <h3 class="skills">Soft Skills</h3>
+          <RenderList :props-list-to-render = "propsRenderSoftSkillsList"/>
+          <a href="https://github.com/lucasbrito3001" target="blank"><button id="stacks-github-button">Meu Github</button></a>
+        </article>
+         <article class="grid-item" id="projects-home">
+           <h2>Portfólio</h2>
+          <RenderPortfolio :props-list-portfolio-to-render="propsListPortfolioToRender"/>
+         </article>
+    
+      </section>
+    </main>
+    <transition name="translateToTop">
+      <aside v-show="showWhatsAppButton">
+        <WhatsApp/>
+      </aside>
+    </transition>
+  </div>
 </template>
 
 <script>
 import ShowImages from '../../components/ShowVariableImages/ShowImages'
 import RenderList from '../../components/RenderLists/RenderList'
+import RenderPortfolio from '../../components/RenderPortfolio/RenderPortfolio'
+import WhatsApp from '../../components/WhatsAppButton/WhatsApp'
 export default {
   name: 'HomePage',
 
   components: {
     ShowImages,
-    RenderList
+    RenderList,
+    RenderPortfolio,
+    WhatsApp
   },
 
   data() {
     return {
       propsShowImagesComponent : [
-        {name: 'Vue.js', src: require('../../assets/vue-js.svg'), alt: 'vue-logo'},
-        {name: 'Sass', src: require('../../assets/sass.svg'), alt: 'sass-logo'},
-        {name: 'JavaScript', src: require('../../assets/javascript.svg'), alt: 'javascript-logo'},
-        {name: 'HTML5', src: require('../../assets/html-5.svg'), alt: 'html5-logo'},
-        {name: 'CSS3', src: require('../../assets/css-3.svg'), alt: 'css3-logo'},
-        {name: 'Bootstrap', src: require('../../assets/bootstrap.svg'), alt: 'bootstrap-logo'}
+        {name: 'Vue.js', src: require('../../assets/vue-js.svg'), alt: 'vue-logo', level: 'Intermediário'},
+        {name: 'Sass', src: require('../../assets/sass.svg'), alt: 'sass-logo', level: 'Básico/Intermediário'},
+        {name: 'JavaScript', src: require('../../assets/javascript.svg'), alt: 'javascript-logo', level: 'Intermediário'},
+        {name: 'HTML5', src: require('../../assets/html-5.svg'), alt: 'html5-logo', level: 'Intermediário'},
+        {name: 'CSS3', src: require('../../assets/css-3.svg'), alt: 'css3-logo', level: 'Intermediário'},
+        {name: 'Bootstrap', src: require('../../assets/bootstrap.svg'), alt: 'bootstrap-logo', level: 'Básico'}
       ],
 
       propsRenderSoftSkillsList: [
@@ -83,14 +76,55 @@ export default {
         {key: 'responsability', name: 'Responsabilidade'},
         {key: 'flexibility', name: 'Flexibilidade'},
         {key: 'learning', name: 'Paixão por Aprender'},
-        {key: 'positivity', name: 'Positividade'},
         {key: 'comunication', name: 'Comunicação'},
         {key: 'leader', name: 'Liderança'},
         {key: 'collaboration', name: 'Colaboração'},
         {key: 'resilience', name: 'Resiliência'},
         {key: 'challenger', name: 'Paixão por Desafios'}
-      ]
+      ],
+
+      propsListPortfolioToRender: [
+        {
+          name: 'Teste Prático Lexart Labs',
+          key: 'lexart-labs',
+          description: 'Desenvolvi um Controle de Estoque consumindo uma API Rest chamada crudcrud para trabalhar com os dados. Na aplicação você pode adicionar um novo produto ao estoque, atualizar ou excluir algum produto já adicionado.',
+          repoLink: 'https://github.com/lucasbrito3001/lexart-labs-test',
+          usedTechs: [{tech: 'Vue.js', key: 'vue'} , {tech: 'JavaScript', key: 'js'} , {tech: 'API Rest' , key: 'api'} , {tech: 'HTML e CSS' , key: 'html-css'}]
+        },
+        {
+          name: 'Coinverter',
+          key: 'coinverter',
+          description: 'Esse foi o meu primeiro projeto utilizando um framework JavaScript (Vue.js) e consumindo uma API, desenvolvi uma aplicação onde pode-se realizar conversões de uma moeda na outra, e analisar alterações de valores.',
+          repoLink: 'https://github.com/lucasbrito3001/Coinverter',
+          usedTechs: [{tech: 'Vue.js', key: 'vue'} , {tech: 'JavaScript', key: 'js'} , {tech: 'API' , key: 'api'} , {tech: 'HTML e CSS' , key: 'html-css'}]
+        },
+        {
+          name: 'Template Site Inception 3D',
+          key: 'i3d', 
+          description: 'Criei um template para o site de um projeto de extensão que eu participava na universidade utilizando Bootstrap, para mim a construção desse projeto foi muito importante, porque foi o que me motivou a continuar na área de desenvolvimento web.',
+          repoLink: 'https://github.com/lucasbrito3001/inception3d-cp',
+          usedTechs: [{tech: 'Bootstrap', key: 'bootstrap'} , {tech: 'JavaScript', key: 'js'} , {tech: 'HTML e CSS' , key: 'html-css'}]
+          
+        },
+        {
+          name: 'Meu Portfólio (Este Site)',
+          key: 'portfolio',
+          description: 'Esse site eu criei com o intuito de aplicar uma nova tecnologia e também mostrar meu trabalho, estou sempre buscando melhorar, e com certeza com o passar do tempo, esse portfolio irá ser alterado conforme eu adquiro mais conhecimento técnico.',
+          repoLink: 'https://github.com/lucasbrito3001/devbrito',
+          usedTechs: [{tech: 'Vue.js', key: 'vue'} , {tech: 'JavaScript', key: 'js'} , {tech: 'HTML e CSS' , key: 'html-css'} , {tech: 'SASS' , key: 'sass'}]
+
+        }
+      ],
+
+      showWhatsAppButton: false
     }
+  },
+
+  created() {
+    window.addEventListener('scroll', () => {
+      const scrollPage = window.scrollY
+      scrollPage >= 600 ? this.showWhatsAppButton = true : this.showWhatsAppButton = false
+    })
   }
 }
 </script>
