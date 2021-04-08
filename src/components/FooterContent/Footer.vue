@@ -16,9 +16,21 @@
           </div>
           <div class="footer-div" id="social-networks">
               <h3>Redes Sociais</h3>
-              <p>Instagram</p>
-              <p>LinkedIn</p>
-              <p>GitHub</p>
+              <p>
+                  <a href="https://www.instagram.com/dev.brito/" target="blank">
+                      Tutoriais no Instagram
+                  </a>
+              </p>
+              <p>
+                  <a href="https://www.linkedin.com/in/webdevbrito" target="blank">
+                      Perfil no LinkedIn
+                  </a>
+              </p>
+              <p>
+                  <a href="https://github.com/lucasbrito3001" target="blank">
+                      Perfil no GitHub
+                  </a>
+              </p>
           </div>
       </main>
       <aside id="footer-aside">

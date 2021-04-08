@@ -108,6 +108,10 @@ export default {
     width: 100%;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   #footer {
     padding-top: 6vh;
     width: 100%;
