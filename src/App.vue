@@ -77,7 +77,8 @@ export default {
 
   @include primary-title;
   @include secondary-title;
-  @include terciary-title;
+  @include tertiary-title;
+  @include quaternary-title;
   @include paragraphs;
   @include sections;
 

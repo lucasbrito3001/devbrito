@@ -3,7 +3,10 @@
           <li class="item-stacks" v-for="tech in propsTechsToShow" :key="tech.name">
             <figure class="figure-stacks">
               <img class="img-stack" :src="tech.src" :alt="tech.alt">
-              <figcaption>{{tech.name}}</figcaption>
+              <figcaption> 
+                <span>{{tech.name}}</span> 
+                <span id="tech-level">{{tech.level}}</span> 
+              </figcaption>
             </figure>
           </li>
         </ul>

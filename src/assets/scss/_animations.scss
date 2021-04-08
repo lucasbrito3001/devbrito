@@ -111,6 +111,17 @@
             }
         }
     }
+
+    @else if $side == bottomSide {
+        animation: showContentRight 1s;
+        @keyframes showContentRight {
+            from {
+                transform: translateY(50px);
+            } to {
+                transform: translateY(0);
+            }
+        }
+    }
 };
 
 // ====================================================================================== //

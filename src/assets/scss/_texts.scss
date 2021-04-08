@@ -20,17 +20,16 @@
 
 @mixin secondary-title {
     h2 {
-        color: $white-palette;
+        color: $gray-palette;
         font-size: 2.2rem;
         width: 100%;
-        font-weight: normal;
-        padding: 5px 2px;
+        font-weight: bold;
         text-align: left;
-        border-bottom: 3px solid rgb(41, 41, 41);
         margin-bottom: 5vh;
         
         @include breakpoint(mediumOnly) {
             font-size: 1.7rem;
+            text-align: center;
         }
 
         @include breakpoint(smallOnly) {
@@ -39,12 +38,12 @@
     }
 }
 
-@mixin terciary-title {
+@mixin tertiary-title {
     h3 {
         color: $white-palette;
         font-size: 1.4rem;
         font-weight: normal;
-        margin: 3vh auto;
+        margin: 5vh auto;
         width: fit-content;
         border-bottom: 2px solid #666;
 
@@ -59,20 +58,35 @@
     }
 }
 
+@mixin quaternary-title {
+    h4 {
+        color: $white-palette;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin: 3vh auto;
+        width: fit-content;
+
+
+        @include breakpoint(mediumOnly) {
+            font-size: 1.1rem;
+        }
+
+        @include breakpoint(smallOnly) {
+            font-size: 1rem;
+        }
+    }
+}
+
 @mixin paragraphs {
     p {
         color: $white-palette;
         font-size: 1.1rem;
         font-weight: lighter;
-        text-align: justify;
-        line-height: 1.75;
+        line-height: 2;
+        word-spacing: 5px;
 
         @include breakpoint(mediumOnly) {
-            font-size: .98rem;
-        }
-
-        @include breakpoint(smallOnly) {
-            font-size: .9rem;
+            font-size: 1rem;
         }
     }
 }

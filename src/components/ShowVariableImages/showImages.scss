@@ -2,31 +2,56 @@
 
 #list-stacks {
     display: flex;
+    flex-direction: row;
     list-style: none;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 10vh 0;
 
-    @include showContent(leftSide);
+    @include showContent(bottomSide);
 
     .figure-stacks {
 
+        border-radius: 2px;
+        box-shadow: -6px -6px 10px 1px rgb(20, 20, 20), 6px 6px 10px 1px rgb(10, 10, 10);
+        width: 400px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        margin: 3vh 0;
+        border: 2px solid rgb(15, 15, 15);
+
+        @include breakpoint(mediumOnly) {
+            width: 340px;
+            margin: 3vh;
+        }
+
         @include breakpoint(smallOnly) {
-            margin: 2vh 0;
+            width: 300px;
+            margin: 3vh;
         }
 
         .img-stack {
             width: 5rem;
-            margin-bottom: 5px;
+            margin: 2vh auto;
     
             @include floatingElement(3s , 0s);
         }
 
         figcaption {
-            font-size: .9rem;
             text-align: center;
             color: $white-palette;
             margin-top: 2vh;
+
+            span {
+                display: block;
+                margin: 2vh 0;
+                font-size: 1.1rem;
+            }
+
+            #tech-level {
+                font-weight: lighter;
+            }
         }
         
     }
