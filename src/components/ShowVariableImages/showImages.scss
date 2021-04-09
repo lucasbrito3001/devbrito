@@ -13,13 +13,12 @@
     .figure-stacks {
 
         border-radius: 2px;
-        box-shadow: -6px -6px 10px 1px rgb(20, 20, 20), 6px 6px 10px 1px rgb(10, 10, 10);
+        box-shadow: -4px -4px 6px 2px rgb(20, 20, 20), 4px 4px 6px 2px rgb(10, 10, 10);
         width: 400px;
         height: 230px;
         display: flex;
         flex-direction: column;
         margin: 3vh 0;
-        border: 2px solid rgb(15, 15, 15);
 
         @include breakpoint(mediumOnly) {
             width: 340px;
@@ -27,7 +26,7 @@
         }
 
         @include breakpoint(smallOnly) {
-            width: 300px;
+            width: 260px;
             margin: 3vh;
         }
 

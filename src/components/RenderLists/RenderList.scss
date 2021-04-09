@@ -5,32 +5,27 @@
     justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
-    box-shadow: -6px -6px 10px 6px rgb(10, 10, 10) , 6px 6px 10px 6px rgb(10, 10, 10);
+    box-shadow: 0px 0px 2px 8px rgb(22, 22, 22);
     border-radius: 10px;
-    border: 1px solid rgb(10, 10, 10);
     padding: 15px 0;
 
     .list-item {
-        color: $white-palette;
-        font-size: 1.1rem;
-        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        color: $white-palette;
+        font-size: 1rem;
+        font-weight: bolder;
         width: 30%;
         margin: 2vh auto;
         padding: 10px 0;
         border-radius: 5px;
-        box-shadow: -6px -6px 10px 1px rgb(20, 20, 20), 6px 6px 10px 1px rgb(10, 10, 10);
+        box-shadow: -4px 4px 4px 3px rgb(8, 8, 8), 4px 4px 4px 3px rgb(8, 8, 8);
 
         @include breakpoint(mediumOnly) {
             width: 45%;
+            font-size: .85rem;
         }
     }
-
-    // .list-item:nth-child(2n+1) {
-    //     @include floatingElement(2s, 0s);
-    // }
-
-    // .list-item:nth-child(2n) {
-    //     @include floatingElement(2s, 1s);
-    // }
 }

@@ -139,6 +139,111 @@
     }
 }
 
+// ====================================================================================== //
 
+@mixin gradientFont($time , $start) {
+    @if $start == transparent {
+        animation: transparentFont1 $time infinite ease;
+    }
+    @else if $start == white {
+        animation: transparentFont2 $time infinite ease;
+    }
+}
 
+@keyframes transparentFont1 {
+    0% {
+        color: transparent;
+    }41% {
+        color: rgba(255,255,255,.1);
+    }42% {
+        color: rgba(255,255,255,.2);
+    }43% {
+        color: rgba(255,255,255,.3);
+    }44% {
+        color: rgba(255,255,255,.4);
+    }45% {
+        color: rgba(255,255,255,.5);
+    }46% {
+      color: rgba(255,255,255,.6);
+    }47% {
+        color: rgba(255,255,255,.7);
+    }48% {
+        color: rgba(255,255,255,.8);
+    }49% {
+        color: rgba(255,255,255,.9);
+    }50% {
+        color: white;
+    }90% {
+        color: rgba(255,255,255,.9);
+    }91% {
+        color: rgba(255,255,255,.8);
+    }92% {
+        color: rgba(255,255,255,.7);
+    }93% {
+        color: rgba(255,255,255,.6);
+    }94% {
+        color: rgba(255,255,255,.5);
+    }95% {
+        color: rgba(255,255,255,.4);
+    }96% {
+        color: rgba(255,255,255,.3);
+    }97% {
+        color: rgba(255,255,255,.2);
+    }98% {
+        color: rgba(255,255,255,.1);
+    }99% {
+        color: rgba(255,255,255,.0);
+    }100% {
+        color: transparent;
+    }
+}
 
+@keyframes transparentFont2 {
+    0% {
+        color: white;
+    }40% {
+        color: rgba(255,255,255,.9);
+    }41% {
+        color: rgba(255,255,255,.8);
+    }42% {
+        color: rgba(255,255,255,.7);
+    }43% {
+        color: rgba(255,255,255,.6);
+    }44% {
+        color: rgba(255,255,255,.5);
+    }45% {
+        color: rgba(255,255,255,.4);
+    }46% {
+        color: rgba(255,255,255,.3);
+    }47% {
+        color: rgba(255,255,255,.2);
+    }48% {
+        color: rgba(255,255,255,.1);
+    }49% {
+        color: rgba(255,255,255,.0);
+    }50% {
+        color: transparent;
+    }90% {
+          color: rgba(255,255,255,.0);
+    }91% {
+        color: rgba(255,255,255,.1);
+    }92% {
+        color: rgba(255,255,255,.2);
+    }93% {
+        color: rgba(255,255,255,.3);
+    }94% {
+        color: rgba(255,255,255,.4);
+    }95% {
+        color: rgba(255,255,255,.5);
+    }96% {
+      color: rgba(255,255,255,.6);
+    }97% {
+        color: rgba(255,255,255,.7);
+    }98% {
+        color: rgba(255,255,255,.8);
+    }99% {
+        color: rgba(255,255,255,.9);
+    } 100% {
+        color: white;
+    }
+}

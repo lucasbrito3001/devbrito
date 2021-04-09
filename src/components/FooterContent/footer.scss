@@ -27,14 +27,13 @@ footer {
         };
 
         a {
-            padding: 5px;
-            color: $white-palette;
+            padding: 5px 10px;
+            color: $cyan-palette;
             display: block;
-            margin: 2vh auto;
+            margin: 4vh auto;
             width: fit-content;
             border-radius: 5px;
-
-            @include borderColorPurpleToCyan(borderFull);
+            background-color: rgb(5, 5, 5);
         }
     }
 

@@ -8,9 +8,26 @@
     margin: 10vh 0 5vh;
 
     .row-main{
-        background-image: linear-gradient(to bottom right,$black-palette,$cyan-palette,$purple-palette,$black-palette);
+        background-image: linear-gradient($black-palette,$dark2-palette,$dark-palette);
         height: 85vh;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #front-end-text {
+            @include gradientFont(10s , white);
+            background-image: linear-gradient(to bottom right, $purple-palette, $cyan-palette);
+            -webkit-background-clip: text;
+        }
+
+        #developer-text {
+            @include gradientFont(10s , transparent);
+            background-image: linear-gradient(to bottom left, $cyan-palette,$purple-palette);
+            -webkit-background-clip: text;
+            display: block;
+            margin-top: -20vh;
+        }
     
         @include breakpoint(smallOnly) {
             height: 65vh;
@@ -27,13 +44,13 @@
     margin: -10vh 10px 5vh;
     border-radius: 10px;
     background-color: $dark2-palette;
-    box-shadow: 6px 6px 7px 2px $shadows-palette, -6px -6px 5px 2px rgb(28, 28, 28);
+    box-shadow: -3px 3px 1px 3px $shadows-palette, 3px 3px 1px 3px $shadows-palette;
     
 
     @include breakpoint(mediumOnly) {
         border-radius: 5px;
         padding: 0 15px;
-        width: 95vw;
+        width: 94vw;
     }
 
     .grid-item {

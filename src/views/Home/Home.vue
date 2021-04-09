@@ -2,8 +2,8 @@
   <div class="home">
     <main class="container">
       <section class="row-main">
-        <h1>Front-end</h1>
-        <h1>Developer</h1>
+        <h1 id="developer-text">Desenvolvedor</h1>
+        <h1 id="front-end-text">Front-end</h1>
       </section>
       <section class="flex-content">
          <article class="grid-item" id="resume-home">
@@ -39,7 +39,7 @@
     </main>
     <transition name="translateToTop">
       <aside v-show="showWhatsAppButton">
-        <WhatsApp/>
+        <Discord/>
       </aside>
     </transition>
   </div>
@@ -49,7 +49,7 @@
 import ShowImages from '../../components/ShowVariableImages/ShowImages'
 import RenderList from '../../components/RenderLists/RenderList'
 import RenderPortfolio from '../../components/RenderPortfolio/RenderPortfolio'
-import WhatsApp from '../../components/WhatsAppButton/WhatsApp'
+import Discord from '../../components/DiscordButton/Discord'
 export default {
   name: 'HomePage',
 
@@ -57,7 +57,7 @@ export default {
     ShowImages,
     RenderList,
     RenderPortfolio,
-    WhatsApp
+    Discord
   },
 
   data() {

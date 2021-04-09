@@ -4,9 +4,8 @@
           <div class="footer-div" id="contact">
               <h3>Contatos</h3>
               <address>
-                  <p id="mail-footer">devlucasmail@gmail.com</p>
-                  <p id="phone-footer">(18) 99735-1747</p>
-                  <p id="address-footer">Birigui - São Paulo</p>
+                  <p id="mail-footer"><strong>email:</strong> devlucasmail@gmail.com</p>
+                  <p id="phone-footer"><strong>discord:</strong> Lucas de Brito#0240</p>
               </address>
           </div>
 
